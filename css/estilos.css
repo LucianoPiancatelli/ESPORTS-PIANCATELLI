@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(64, 64, 209, 0.63);
+}
+
+.carousel-inner img{
+    margin: auto;
+}
+
+.jumbo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+    font-weight: bolder;
+}
+
+.jumbotron{
+    background-color: goldenrod;
+}
+
+.nav-item :hover{
+    font-size: x-large;
+    background-color: rgb(128, 121, 27);
+   
+    transition: 1s;}
+
+.nav-link :hover{
+    color: black;
+}
+
+
+.cuerpo {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "teams teams";
+  }
+  
+  .teams {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      "fifa valo heart lol rocket"
+      ". . . . .";
+    grid-area: teams;
+  }
+  
+  .fifa { grid-area: fifa; }
+  
+  .valo { grid-area: valo; }
+  
+  .heart { grid-area: heart; }
+  
+  .lol { grid-area: lol; }
+  
+  .rocket { grid-area: rocket; }
+  
